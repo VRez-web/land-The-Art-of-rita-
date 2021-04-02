@@ -1,8 +1,10 @@
+// пробегаем по всем элементам чтобы применить данные из data
 shapes.forEach((el) => (el.style.backgroundColor = `${el.dataset.bg}`));
 bgItems.forEach(
-  (el) => (el.style.backgroundImage = `url('.${el.dataset.img}')`)
+  (el) => (el.style.backgroundImage = `url('${el.dataset.img}')`)
 );
 
+// Создаем функцию которая принимает значение скролла(вверх или вниз) и в зависимости от этого добавляем/удаляем классы
 const bgSlides = (direction) => {
   let itemClass = `slide-${slideCounter}`;
 

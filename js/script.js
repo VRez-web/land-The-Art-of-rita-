@@ -1,5 +1,9 @@
+/*
+Основной фаил где запускаются все функции при загрузке сайта
+*/
 const init = () => {
 
+  // Запуск прелоадера при загрузке сайта
   window.onload = function(){
     const preloader = document.querySelector('.preloader')
     preloader.classList.add('preloader-animation')
@@ -14,12 +18,15 @@ const init = () => {
       preloader.classList.add('preloader-none')
     }, 3200);
   }
+
+  // функция показа следующего слайда при скролле вниз
   const showNextSlide = () => {
       bgSlides('down')
       imagesSlides('down')
       shapesSlides('down')
       textSlides('down')
   };
+    // функция показа следующего слайда при скролле вверх
   const showPrevSlide = () => {
     bgSlides('up')
     imagesSlides('up')

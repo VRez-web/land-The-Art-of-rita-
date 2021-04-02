@@ -1,3 +1,6 @@
+// Создали функцию, которая двигает наш новый стилизованный курсор
+// а так же при наведение на определенные элементы меняет стили этого курсора
+
 function moveMouse(e) {
   if (
     e.clientX < 5 ||
@@ -17,12 +20,8 @@ function moveMouse(e) {
 if (window.innerWidth >= 768) {
   document.addEventListener("mousemove", moveMouse);
 
-  slideBg.addEventListener("mouseover", () =>
-    mouse.classList.add("view-visible")
-  );
-  slideBg.addEventListener("mouseleave", () =>
-    mouse.classList.remove("view-visible")
-  );
+  slideBg.addEventListener("mouseover", () => mouse.classList.add("view-visible"));
+  slideBg.addEventListener("mouseleave", () => mouse.classList.remove("view-visible"));
 
   links.forEach(link => {
     link.addEventListener('mouseover',()=>  mouse.classList.add("links-visible"))

@@ -1,3 +1,5 @@
+// создаем функцию которая принимает поведение скролла(вверх/вниз) и в завивисмости от скролла
+//  ищем или след. элемент или предыдущий и добавляем/удаляем классы и добавляем анимации
 const imagesSlides = (direction) => {
     let currentSlide = document.querySelector('.slide-bg__inner--current');
     let nextSlide;

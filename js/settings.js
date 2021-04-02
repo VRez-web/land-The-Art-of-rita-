@@ -1,3 +1,4 @@
+// фаил со всеми основными переменными
 const bgItems = document.querySelectorAll(".slide-bg__link"),
   imageSlides = document.querySelectorAll(".slide-bg__inner"),
   shapes = document.querySelectorAll(".shapes__content"),
