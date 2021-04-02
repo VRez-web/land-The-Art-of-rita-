@@ -1,5 +1,4 @@
 const startAnimation = () => {
-  console.log("start");
 
   const currentSlide = document.querySelector(".slide-bg__inner--current"),
     currentShape = document.querySelector(".shapes__item--current"),
